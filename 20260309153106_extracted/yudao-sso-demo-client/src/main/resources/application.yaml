@@ -1,0 +1,10 @@
+server:
+  port: 18080
+
+
+yudao:
+  sso:
+    oauth2-server: http://127.0.0.1:48080/admin-api/system/oauth2
+    client-key: yudao-sso-demo-by-code
+    client-secret: test
+    tenant-id: 1
