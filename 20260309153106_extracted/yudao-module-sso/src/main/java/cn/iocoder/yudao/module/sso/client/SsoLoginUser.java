@@ -1,6 +1,7 @@
 package cn.iocoder.yudao.module.sso.client;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  *
  */
 @Data
+@Accessors(chain = true)
 public class SsoLoginUser {
 
     /**
