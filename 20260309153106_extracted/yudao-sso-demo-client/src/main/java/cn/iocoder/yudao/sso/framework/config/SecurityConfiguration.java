@@ -33,6 +33,7 @@ public class SecurityConfiguration{
                 // 1. 静态资源，可匿名访问
                 .antMatchers(HttpMethod.GET, "/*.html", "/**/*.html", "/**/*.css", "/**/*.js").permitAll()
                 // 2. 登录相关的接口，可匿名访问
+                .antMatchers("/api/sso/**").permitAll()
                 .antMatchers("/sso/login-by-code").permitAll()
                 .antMatchers("/sso/refresh-token").permitAll()
                 .antMatchers("/sso/logout").permitAll()
